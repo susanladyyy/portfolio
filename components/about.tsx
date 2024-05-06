@@ -11,7 +11,7 @@ import styles from '@/components/styles/Styles.module.css'
 
 export default function About() {
     return (
-        <div className='mb-25 max-w-[60rem] text-center sm:mb-0'>
+        <div id="about" className='mb-25 max-w-[60rem] text-center sm:mb-0'>
             <div className='flex items-center justify-center'>
                 <div className="">
                     <motion.div

@@ -1,3 +1,76 @@
-.paragraph {
-    line-height: 2.0rem;
+.education {
+    @apply flex justify-center items-center;
+}
+
+.timeline {
+    @apply relative max-w-[1200px] my-[100px] mx-auto;
+}
+
+.title {
+    @apply text-2xl font-bold;
+}
+
+.container {
+    @apply py-[10px] px-[10px] relative flex justify-center items-center;
+}
+
+.item {
+    @apply py-[20px] px-[30px] relative rounded-xl border shadow-md w-[80%];
+}
+
+.edu_logo {
+    @apply absolute -right-[80px] top-[32px] z-10;
+}
+
+.edu_year {
+    @apply mb-[1rem] text-[12px];
+}
+
+.timeline > .container:nth-child(odd) {
+    @apply -left-[50%];
+}
+
+.timeline > .container:nth-child(even) {
+    @apply left-[50%];
+}
+
+.timeline > .container:nth-child(odd) .item {
+    @apply shadow-[#d2d2fa];
+}
+
+.timeline > .container:nth-child(even) .item {
+    @apply shadow-[#d2e8f0];
+}
+
+.timeline > .container:nth-child(even) .item .edu_logo {
+    @apply -left-[80px];
+}
+
+.timeline::after {
+    content: '';
+    @apply absolute w-[6px] h-[100%] bg-white top-0 left-[50%] -ml-[3px] -z-10 border shadow-md;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.timeline > .container:nth-child(odd) .item .arrow {
+    @apply h-0 w-0 absolute top-[30px] z-10 -right-[15px];
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #d2d2fa;
+}
+
+.timeline > .container:nth-child(even) .item .arrow {
+    @apply h-0 w-0 absolute top-[30px] z-10 -left-[15px];
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #d2e8f0;
 }

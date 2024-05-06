@@ -1,5 +1,3 @@
-import React from "react";
-
 export const menus = [
     {
         id: "#about",
@@ -171,27 +169,32 @@ export const experiences = [
 export const educations = [
     {
         title: "Primary School",
+        logo: "/assets/Logo_BPK_PENABUR.png",
         school: "BPK Penabur",
         year: "2008 - 2011"
     },
     {
         title: "Primary School",
+        logo: "/assets/logo-tutwuri.png",
         school: "Harapan Bunda",
         year: "2011 - 2014"
     },
     {
         title: "Secondary School",
-        school: "BINUS School Serpong",
+        logo: "/assets/binus_school.png",
+        school: "BINUS School Serpong (Streaming: IT and Sociology)",
         year: "2014 - 2017"
     },
     {
         title: "High School",
-        school: "EFATA School",
+        logo: "/assets/logo-tutwuri.png",
+        school: "EFATA School (Streaming: Science)",
         year: "2017 - 2020"
     },
     {
         title: "University",
-        school: "BINUS University",
+        logo: "/assets/binus_uni.png",
+        school: "BINUS University (Bachelor of Computer Science)",
         year: "2020 - 2024"
     },
 ];
