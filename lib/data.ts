@@ -1,8 +1,7 @@
+export const about = "My name is Susan Lady Rumokoy, and I am a freshgraduate majoring in Computer Science. Currently I am working full-time as a Laboratory Assistant and Operations and System Development Staff.";
+{/* During my initial semester, I applied for a part-time position as a computer laboratory assistant. Despite initial setbacks, I persevered and secured the position during a subsequent hiring period. Serving as a part-time assistant, I gained invaluable experience and was eventually promoted to a full-time role. In my capacity as a full-time assistant, I have been exposed to a diverse range of coding technologies and have contributed to various projects including game development, desktop applications, web development, mobile applications, and network projects. Concurrently, I continued to instruct and mentor students in various subjects. Presently, I am completing an internship at BINUS University as an application developer. Additionally, I have been entrusted with the responsibility of an Operation and Systems Development Staff, wherein I oversee the management of software and hardware utilized for laboratory practicum classes. */}
+
 export const menus = [
-    {
-        id: "#about",
-        name: "About",
-    },
     {
         id: "#education",
         name: "Education",

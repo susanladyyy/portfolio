@@ -26,21 +26,23 @@ export default function Education() {
         //     </ol>
         // </div>
 
-        <div className={styles.education}>
-            <div className={styles.timeline}>
-                {
-                    educations.map((edu, index) => (
-                        <div className={styles.container} key={index}>
-                            <div className={styles.item}>
-                                <Image className={styles.edu_logo} src={edu.logo} alt='not_found' width={50} height={50}/>
-                                <h2 className={styles.title}>{edu.title}</h2>
-                                <p className={styles.edu_year}>{edu.year}</p>
-                                <p>{edu.school}</p>
-                                <span className={styles.arrow}></span>
+        <div className={styles.education_container}>
+            <div className={styles.education}>
+                <div className={styles.timeline}>
+                    {
+                        educations.map((edu, index) => (
+                            <div className={styles.container} key={index} style={{ animationDelay: `${index}s` }}>
+                                <div className={styles.item}>
+                                    <Image className={styles.edu_logo} src={edu.logo} alt='not_found' width={50} height={50}/>
+                                    <h2 className={styles.title}>{edu.title}</h2>
+                                    <p className={styles.edu_year}>{edu.year}</p>
+                                    <p>{edu.school}</p>
+                                    <span className={styles.arrow}></span>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )
