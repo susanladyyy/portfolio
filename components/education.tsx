@@ -28,7 +28,7 @@ export default function Education() {
 
         <div className={styles.education_container}>
             <div className={styles.education}>
-                <div className={styles.timeline}>
+                {/* <div className={styles.timeline}>
                     {
                         educations.map((edu, index) => (
                             <div className={styles.container} key={index} style={{ animationDelay: `${index}s` }}>
@@ -42,7 +42,7 @@ export default function Education() {
                             </div>
                         ))
                     }
-                </div>
+                </div> */}
             </div>
         </div>
     )
