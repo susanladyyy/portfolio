@@ -86,7 +86,7 @@
     @apply flex flex-wrap justify-center;
 }
 .project_card {
-    @apply relative border-2 border-white shadow-lg rounded-2xl max-w-[45em] p-5 m-2 overflow-hidden sm:pr-8;
+    @apply relative border-2 border-white shadow-lg rounded-2xl max-w-[45em] p-5 m-2 overflow-hidden sm:pr-8 hover:bg-gray-50/[0.5];
 }
 .project_card:nth-child(odd) {
     @apply border-[#d2d2fa];
@@ -111,7 +111,7 @@
 }
 
 .project_image {
-    @apply absolute -bottom-5 -right-96 rounded-t-xl;
+    @apply absolute top-8 -right-96 rounded-t-xl transition;
 }
 /* Projects */
 

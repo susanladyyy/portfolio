@@ -13,7 +13,7 @@ import { about } from '@/lib/data'
 export default function About() {
     return (
         <div className={styles.about_main}>
-            <div id="about" className={styles.about_container}>
+            <div className={styles.about_container}>
                 <div className={styles.profile_container}>
                     <div className="">
                         <motion.div

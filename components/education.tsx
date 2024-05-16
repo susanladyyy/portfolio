@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Education() {
     return (
-        <div className={styles.education_container}>
+        <div id="education" className={`${styles.education_container} scroll-mt-2`}>
             <div className={styles.education}>
                 
             </div>
