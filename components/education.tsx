@@ -1,11 +1,13 @@
+"use client"
 import React from 'react'
-import { educations } from '@/lib/data'
 import styles from './styles/Styles.module.css'
-import Image from 'next/image'
+import { useMenuInView } from '@/lib/hooks'
 
 export default function Education() {
+    const { ref } = useMenuInView("Education")
+
     return (
-        <div id="education" className={`${styles.page_container} mt-[3rem]`}>
+        <div ref={ref} id="education" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem]`}>
             <div className={styles.title_container}>
                 <span className={styles.title}>Education</span> 
             </div>

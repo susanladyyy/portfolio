@@ -31,7 +31,7 @@ export default function ProjectCard({
                 opacity: opacityProgress,
             }}
         >
-            <div className='w-1/2 group-even:ml-[22rem]'>
+            <div className='w-1/2 group-even:ml-[12rem]'>
                 <p className={styles.project_title}>{title}</p>
                 <p className={styles.project_description}>{brief}</p>
                 <ul className={styles.project_tag_container}>
@@ -42,7 +42,7 @@ export default function ProjectCard({
                     }
                 </ul>
             </div>
-            <Image src={image} alt={title} quality={95} className={`${styles.project_image} group-hover:-translate-x-1 group-hover:translate-y-1 group-hover:-rotate-1 group-hover:scale-[1.05] group-even:-right-[initial] group-even:-left-96 group-even:group-hover:translate-x-1 group-even:group-hover:rotate-1 group-even:group-hover:translate-y-1`}/>
+            <Image src={image} alt={title} quality={95} className={`${styles.project_image} group-hover:-translate-x-1 group-hover:translate-y-1 group-hover:-rotate-1 group-hover:scale-[1.05] group-even:-right-[initial] group-even:-left-52 group-even:group-hover:translate-x-1 group-even:group-hover:rotate-1 group-even:group-hover:translate-y-1`}/>
         </motion.div>
     )
 }

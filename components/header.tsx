@@ -1,14 +1,15 @@
 "use client";
 
-import React, { useState } from "react"
+import React from "react"
 import { motion } from "framer-motion"
 import { menus } from "@/lib/data"
 import Link from "next/link"
 import styles from '@/components/styles/Styles.module.css'
 import clsx from "clsx";
+import { useActiveMenuContext } from "@/context/active-menu";
 
 export default function Header() {
-    const[activeMenu, setActiveMenu] = useState('Projects');
+    const { activeMenu, setActiveMenu, setLastClick } = useActiveMenuContext()
 
     return (
         <header className={styles.header_container}>
@@ -37,6 +38,7 @@ export default function Header() {
                             onClick={
                                 () => {
                                     setActiveMenu(menu.name)
+                                    setLastClick(Date.now())
                                 }
                             }
                             href={menu.id}>

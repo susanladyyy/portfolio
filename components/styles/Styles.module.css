@@ -1,6 +1,6 @@
 /* title design */
 .title_container {
-    @apply mb-[1rem] scroll-mt-[10rem];
+    @apply mb-[1rem];
 }
 
 /* containers */
@@ -31,7 +31,7 @@
 }
 
 /* .right_container_content {
-    @apply scroll-mt-[10rem];
+    @apply mb-[2rem];
 } */
 
 .right_container_content::-webkit-scrollbar { 
@@ -41,7 +41,7 @@
 
 /* Header */
 .header_container {
-    @apply z-10;
+    @apply z-[999];
 }
 .header_bg {
     @apply fixed md:top-10 left-1/2 w-full rounded-xl border border-white border-opacity-40 bg-white bg-opacity-20 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[80%]; 
@@ -98,7 +98,7 @@
 
 /* Projects */
 .project_card {
-    @apply relative border-2 border-white shadow-lg rounded-2xl max-w-[45em] p-5 m-2 overflow-hidden sm:pr-8 hover:bg-gray-50/[0.5];
+    @apply relative border-2 border-white shadow-lg rounded-2xl max-w-[25rem] p-5 m-2 overflow-hidden sm:pr-8 hover:bg-gray-50/[0.5] w-1/2;
 }
 .project_card:nth-child(odd) {
     @apply border-[#d2d2fa];
@@ -123,7 +123,7 @@
 }
 
 .project_image {
-    @apply absolute top-8 -right-96 rounded-t-xl transition;
+    @apply absolute w-[40] -top-1 -right-52 rounded-b-xl transition;
 }
 /* Projects */
 
@@ -131,3 +131,9 @@
 
 
 /* Education */
+
+/* Skills */
+.skills {
+    @apply text-center w-[50rem] mx-auto my-[2rem];
+}
+/* Skills */
