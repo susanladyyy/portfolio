@@ -1,23 +1,38 @@
+/* title design */
+.title_container {
+    @apply mb-[1rem] scroll-mt-[10rem];
+}
+
+/* containers */
+.page_container {
+    @apply relative left-[20rem];
+}
+
+.title {
+    @apply ml-[0.7rem] font-bold bg-gray-50/[0.3] border border-white p-2 rounded-lg;
+}
+
 /* Main */
 .main_container {
-    @apply w-[80%] flex justify-start items-start mx-auto;
+    @apply w-[80%] mx-auto -z-0;
 }
 
 .left_container {
-    @apply relative -top-[1rem] w-[28%] flex items-center justify-center rounded-xl border border-white border-opacity-40 bg-white bg-opacity-20 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem];
+    @apply fixed top-[6.5rem] w-1/5 flex items-center justify-center rounded-xl border border-white border-opacity-40 bg-white bg-opacity-20 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem];
 }
 
 .right_container {
-    @apply relative -top-[1rem] w-[72%] h-full max-h-[82vh] overflow-hidden flex justify-center rounded-xl border border-white border-opacity-0 bg-white bg-opacity-0;
+    @apply w-[72%] h-full max-h-[82vh] flex justify-center rounded-xl border border-white border-opacity-0 bg-white bg-opacity-0 mb-[2rem];
     /* shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]; */
 }
 
 .left_container_content {
-    @apply w-full overflow-hidden py-[2rem];
+    @apply w-full py-[2rem];
 }
-.right_container_content {
-    @apply w-full overflow-scroll;
-}
+
+/* .right_container_content {
+    @apply scroll-mt-[10rem];
+} */
 
 .right_container_content::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -26,7 +41,7 @@
 
 /* Header */
 .header_container {
-    @apply z-[999];
+    @apply z-10;
 }
 .header_bg {
     @apply fixed md:top-10 left-1/2 w-full rounded-xl border border-white border-opacity-40 bg-white bg-opacity-20 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[80%]; 
@@ -35,7 +50,7 @@
     @apply flex fixed md:top-[2.7rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0;
 }
 .nav_ul {
-    @apply flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5;
+    @apply flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap;
 }
 .nav_item {
     @apply h-3/4 flex items-center justify-center relative;
@@ -46,7 +61,7 @@
 
 @media (max-width: 600px) {
     .nav_link {
-        @apply px-3
+        @apply px-3;
     }
 }
 /* Header */
@@ -82,9 +97,6 @@
 /* About */
 
 /* Projects */
-.project_container {
-    @apply flex flex-wrap justify-center;
-}
 .project_card {
     @apply relative border-2 border-white shadow-lg rounded-2xl max-w-[45em] p-5 m-2 overflow-hidden sm:pr-8 hover:bg-gray-50/[0.5];
 }
@@ -116,5 +128,6 @@
 /* Projects */
 
 /* Education */
+
 
 /* Education */
