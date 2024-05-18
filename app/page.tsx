@@ -15,10 +15,10 @@ export default function Home() {
       </div>
       <div className={styles.right_container}>
         <div className={styles.right_container_content}>
-          <Project />
           <Education />
-          <Experience />
           <Skills />
+          <Experience />
+          <Project />
         </div>
       </div>
     </main>

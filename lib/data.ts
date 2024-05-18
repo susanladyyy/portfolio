@@ -2,6 +2,7 @@ import dummy from '@/public/assets/dummy_project.jpg'
 import React from 'react';
 import { CgWebsite } from 'react-icons/cg';
 import { FaChalkboardTeacher } from 'react-icons/fa';
+import { FaGraduationCap } from 'react-icons/fa6';
 import { IoIosGitNetwork, IoMdMusicalNotes } from 'react-icons/io';
 
 export const about = "My name is Susan Lady Rumokoy, and I am a freshgraduate majoring in Computer Science. Currently I am working full-time as a Laboratory Assistant and Operations and System Development Staff.";
@@ -9,20 +10,20 @@ export const about = "My name is Susan Lady Rumokoy, and I am a freshgraduate ma
 
 export const menus = [
     {
-        id: "#projects",
-        name: "Projects",
-    },
-    {
         id: "#education",
         name: "Education",
+    },
+    {
+        id: "#skills",
+        name: "Skills",
     },
     {
         id: "#experience",
         name: "Experience",
     },
     {
-        id: "#skills",
-        name: "Skills",
+        id: "#projects",
+        name: "Projects",
     },
     {
         id: "#contact",
@@ -188,31 +189,31 @@ export const experiences = [
 export const educations = [
     {
         title: "Primary School",
-        logo: "/assets/Logo_BPK_PENABUR.png",
+        logo: React.createElement(FaGraduationCap),
         school: "BPK Penabur",
         year: "2008 - 2011"
     },
     {
         title: "Primary School",
-        logo: "/assets/logo-tutwuri.png",
+        logo: React.createElement(FaGraduationCap),
         school: "Harapan Bunda",
         year: "2011 - 2014"
     },
     {
         title: "Secondary School",
-        logo: "/assets/binus_school.png",
+        logo: React.createElement(FaGraduationCap),
         school: "BINUS School Serpong (Streaming: IT and Sociology)",
         year: "2014 - 2017"
     },
     {
         title: "High School",
-        logo: "/assets/logo-tutwuri.png",
+        logo: React.createElement(FaGraduationCap),
         school: "EFATA School (Streaming: Science)",
         year: "2017 - 2020"
     },
     {
         title: "University",
-        logo: "/assets/binus_uni.png",
+        logo: React.createElement(FaGraduationCap),
         school: "BINUS University (Bachelor of Computer Science)",
         year: "2020 - 2024"
     },

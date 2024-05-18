@@ -5,7 +5,7 @@
 
 /* containers */
 .page_container {
-    @apply relative left-[20rem];
+    @apply relative left-[20rem] mb-[10rem];
 }
 
 .title {
@@ -132,15 +132,15 @@
 
 /* Education */
 
-/* Experience */
-.experience_date {
+/* Experience Education */
+.date {
     @apply mx-[1rem];
 }
 
-.experience_icon {
+.icon {
     @apply bg-white/[0.3] text-gray-800;
 }
-/* Experience */
+/* Experience Education */
 
 /* Skills */
 .skills {

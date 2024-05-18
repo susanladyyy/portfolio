@@ -31,9 +31,9 @@ export default function Experience() {
                                         borderRight: "0.4rem solid white"
                                     }}
                                     date={exp.date}
-                                    dateClassName={styles.experience_date}
+                                    dateClassName={styles.date}
                                     icon={exp.icon}
-                                    iconClassName={styles.experience_icon}
+                                    iconClassName={styles.icon}
                                 >
                                     <p>{exp.title}</p>
                                     <p>{exp.company}</p>
