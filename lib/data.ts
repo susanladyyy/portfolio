@@ -1,4 +1,8 @@
 import dummy from '@/public/assets/dummy_project.jpg'
+import React from 'react';
+import { CgWebsite } from 'react-icons/cg';
+import { FaChalkboardTeacher } from 'react-icons/fa';
+import { IoIosGitNetwork, IoMdMusicalNotes } from 'react-icons/io';
 
 export const about = "My name is Susan Lady Rumokoy, and I am a freshgraduate majoring in Computer Science. Currently I am working full-time as a Laboratory Assistant and Operations and System Development Staff.";
 {/* During my initial semester, I applied for a part-time position as a computer laboratory assistant. Despite initial setbacks, I persevered and secured the position during a subsequent hiring period. Serving as a part-time assistant, I gained invaluable experience and was eventually promoted to a full-time role. In my capacity as a full-time assistant, I have been exposed to a diverse range of coding technologies and have contributed to various projects including game development, desktop applications, web development, mobile applications, and network projects. Concurrently, I continued to instruct and mentor students in various subjects. Presently, I am completing an internship at BINUS University as an application developer. Additionally, I have been entrusted with the responsibility of an Operation and Systems Development Staff, wherein I oversee the management of software and hardware utilized for laboratory practicum classes. */}
@@ -148,31 +152,36 @@ export const experiences = [
         title: "Application Developer",
         company: "BINUS University",
         description: "Internship",
-        date: "Feb 2023 - Feb 2024"
+        date: "Feb 2023 - Feb 2024",
+        icon: React.createElement(CgWebsite),
     },
     {
         title: "Operations and System Development Officer",
         company: "BINUS University",
         description: "Full-time",
-        date: "Jan 2023 - Present"
+        date: "Jan 2023 - Present",
+        icon: React.createElement(IoIosGitNetwork),
     },
     {
         title: "Junior Laboratory Assistant",
         company: "BINUS University",
         description: "Full-time",
-        date: "Feb 2022 - Jan 2023"
+        date: "Feb 2022 - Jan 2023",
+        icon: React.createElement(FaChalkboardTeacher),
     },
     {
         title: "Part Time Laboratory Assistant",
         company: "BINUS University",
         description: "Part-time",
-        date: "Aug 2021 - Feb 2022"
+        date: "Aug 2021 - Feb 2022",
+        icon: React.createElement(FaChalkboardTeacher),
     },
     {
         title: "Sound and Equipment Activist (SAE)",
         company: "UKM Bersama Dalam Musik",
         description: "Internship",
-        date: "Apr 2021 - Oct 2021"
+        date: "Apr 2021 - Oct 2021",
+        icon: React.createElement(IoMdMusicalNotes),
     },
 ];
 

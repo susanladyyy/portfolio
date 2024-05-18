@@ -132,6 +132,16 @@
 
 /* Education */
 
+/* Experience */
+.experience_date {
+    @apply mx-[1rem];
+}
+
+.experience_icon {
+    @apply bg-white/[0.3] text-gray-800;
+}
+/* Experience */
+
 /* Skills */
 .skills {
     @apply text-center w-[50rem] mx-auto my-[2rem];
