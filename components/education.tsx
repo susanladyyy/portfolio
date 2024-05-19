@@ -1,5 +1,5 @@
 "use client"
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import styles from './styles/Styles.module.css'
 import { useMenuInView } from '@/lib/hooks'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
@@ -9,7 +9,7 @@ export default function Education() {
     const { ref } = useMenuInView("Education")
 
     return (
-        <div ref={ref} id="education" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem]`}>
+        <div ref={ref} id="education" className={`${styles.page_container} scroll-mt-[7rem] -mt-4`}>
             <div className={styles.title_container}>
                 <span className={styles.title}>Education</span> 
             </div>

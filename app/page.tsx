@@ -4,6 +4,7 @@ import Project from "@/components/projects";
 import styles from '@/components/styles/Styles.module.css'
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <Skills />
           <Experience />
           <Project />
+          <Contact />
         </div>
       </div>
     </main>

@@ -14,7 +14,7 @@
 
 /* Main */
 .main_container {
-    @apply w-[80%] mx-auto -z-0;
+    @apply w-[80%] mx-auto;
 }
 
 .left_container {
@@ -31,7 +31,7 @@
 }
 
 /* .right_container_content {
-    @apply mb-[2rem];
+    @apply scroll-mt-[10rem];
 } */
 
 .right_container_content::-webkit-scrollbar { 
@@ -41,10 +41,10 @@
 
 /* Header */
 .header_container {
-    @apply z-[999];
+    @apply fixed z-[999];
 }
 .header_bg {
-    @apply fixed md:top-10 left-1/2 w-full rounded-xl border border-white border-opacity-40 bg-white bg-opacity-20 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[80%]; 
+    @apply fixed md:top-10 left-1/2 w-full rounded-xl border border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[80%]; 
 }
 .nav_menu {
     @apply flex fixed md:top-[2.7rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0;

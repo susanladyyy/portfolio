@@ -15,7 +15,7 @@ export default function Experience() {
                 <span className={styles.title}>Experience</span> 
             </div>
             <div>
-                <VerticalTimeline>
+                <VerticalTimeline lineColor='rgba(255,255,255,0.5)'>
                     {
                         experiences.map((exp, index) => (
                             <Fragment key={index}>
