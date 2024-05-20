@@ -1,10 +1,10 @@
-import About from "@/components/about";
-import Education from "@/components/education";
-import Project from "@/components/projects";
+import About from "@/components/about/about";
+import Education from "@/components/education/educations";
+import Project from "@/components/project/projects";
 import styles from '@/components/styles/Styles.module.css'
-import Skills from "@/components/skills";
-import Experience from "@/components/experience";
-import Contact from "@/components/contact";
+import Skills from "@/components/skill/skills";
+import Experience from "@/components/experience/experiences";
+import Contact from "@/components/contact/contact";
 
 export default function Home() {
   return (

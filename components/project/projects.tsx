@@ -1,7 +1,7 @@
 "use client"
 import { projects } from '@/lib/data'
 import React, { Fragment } from 'react'
-import styles from '@/components/styles/Styles.module.css'
+import styles from '../styles/Styles.module.css'
 import ProjectCard from './project'
 import { useMenuInView } from '@/lib/hooks'
 

@@ -4,7 +4,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { menus } from "@/lib/data"
 import Link from "next/link"
-import styles from '@/components/styles/Styles.module.css'
+import styles from '../styles/Styles.module.css'
 import clsx from "clsx";
 import { useActiveMenuContext } from "@/context/active-menu";
 

@@ -2,7 +2,7 @@
 import { projects } from '@/lib/data'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import React, { useRef } from 'react'
-import styles from '@/components/styles/Styles.module.css'
+import styles from '../styles/Styles.module.css'
 import Image from 'next/image'
 
 type ProjectProps = (typeof projects)[number]

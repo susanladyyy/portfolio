@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import styles from './styles/Styles.module.css'
+import styles from '@/components/styles/Styles.module.css'
 import { useMenuInView } from '@/lib/hooks'
 import { skills } from '@/lib/data'
 import { motion } from 'framer-motion' 
