@@ -127,11 +127,6 @@
 }
 /* Projects */
 
-/* Education */
-
-
-/* Education */
-
 /* Experience Education */
 .date {
     @apply mx-[1rem];
@@ -147,3 +142,29 @@
     @apply text-center w-[50rem] mx-auto my-[2rem];
 }
 /* Skills */
+
+/* Contact */
+.contact_email {
+    @apply underline text-blue-500;
+}
+
+.contact_subtitle {
+    @apply mx-[0.7rem] mt-[1rem] mb-[2rem];
+}
+
+.contact_form {
+    @apply flex flex-col;
+}
+
+.email_input {
+    @apply h-10;
+}
+
+.email_input, .message_input {
+    @apply my-[0.5rem] rounded-lg shadow-md bg-gray-100/[0.7] p-5 focus:bg-white;
+}
+
+.contact_button {
+    @apply flex items-center gap-2 bg-gray-100/[0.7] border-gray-50 w-[20%] justify-center px-5 py-2 rounded-lg shadow-md hover:scale-95 hover:bg-white;
+}
+/* Contact */

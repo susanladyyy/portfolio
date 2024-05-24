@@ -9,8 +9,11 @@ import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
 import styles from '@/components/styles/Styles.module.css'
 import { about } from '@/lib/data'
+import { useActiveMenuContext } from '@/context/active-menu'
 
 export default function About() {
+    const { setActiveMenu, setLastClick } = useActiveMenuContext()
+
     return (
         <div className={styles.about_main}>
             <div className={styles.about_container}>
@@ -42,7 +45,12 @@ export default function About() {
                 </div>
 
                 <div className={styles.about_contact}>
-                    <Link href='#contact' className={`${styles.contact_item} bg-[#020035] text-white hover:scale-95`}>
+                    <Link href='#contact' className={`${styles.contact_item} bg-[#020035] text-white hover:scale-95`} onClick={
+                        () => {
+                            setActiveMenu('Contact')
+                            setLastClick(Date.now())        
+                        }
+                    }>
                         Contact me <BsArrowRight />
                     </Link>
                     <a className={`${styles.contact_item} bg-white text-[#020035] hover:scale-95`}>
