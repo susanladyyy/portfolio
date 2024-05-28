@@ -149,7 +149,7 @@
 }
 
 .contact_subtitle {
-    @apply mx-[0.7rem] mt-[1rem] mb-[2rem];
+    @apply mx-[0.7rem] mt-[1rem] mb-[2rem] text-gray-600;
 }
 
 .contact_form {
