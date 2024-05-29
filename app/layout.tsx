@@ -20,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative !scroll-smooth">
-      <body className={`${inter.className} bg-[#d2e8f0] text-gray-950 relative pt-25 sm:pt-32`}>
-        <div className="bg-[#d2d2fa] top-[6rem] -z-10  right-[30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] fixed"></div>
+      <body className={`${inter.className} bg-[#d2e8f0] text-gray-950 relative pt-25 sm:pt-32 dark:bg-gray-800 dark:text-gray-50 dark:text-opacity-90`}>
+        <div className="bg-[#d2d2fa] top-[6rem] -z-10  right-[30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] fixed dark:bg-[#676394]"></div>
 
         {/* <div className="bg-[#d2e8f0] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div> */}
         <ActiveMenuContextProvider>
