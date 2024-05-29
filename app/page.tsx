@@ -5,6 +5,7 @@ import styles from '@/components/styles/Styles.module.css'
 import Skills from "@/components/skill/skills";
 import Experience from "@/components/experience/experiences";
 import Contact from "@/components/contact/contact";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (

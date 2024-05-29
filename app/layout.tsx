@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/header";
 import ActiveMenuContextProvider from "@/context/active-menu";
+import { Toaster } from "react-hot-toast";
+import ThemeSwitch from "@/components/theme/theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,11 @@ export default function RootLayout({
         <ActiveMenuContextProvider>
           <Header />
           {children}
+
+          <Toaster position="bottom-center"/>
         </ActiveMenuContextProvider>
+
+        <ThemeSwitch />
       </body>
     </html>
   );

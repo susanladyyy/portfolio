@@ -89,7 +89,7 @@
     @apply bg-white text-[#020035] p-4 flex items-center gap-2 rounded-full hover:bg-[#020035] hover:text-white;
 }
 .about_desc {
-    @apply mt-[1rem] text-[15px];
+    @apply mt-[1rem] text-[13px];
 }
 .contact_item {
     @apply px-7 py-3 flex items-center gap-2 rounded-full shadow-xl cursor-pointer;
@@ -165,6 +165,6 @@
 }
 
 .contact_button {
-    @apply flex items-center gap-2 bg-gray-100/[0.7] border-gray-50 w-[20%] justify-center px-5 py-2 rounded-lg shadow-md hover:scale-95 hover:bg-white;
+    @apply flex items-center gap-2 bg-gray-100/[0.7] border-gray-50 w-[20%] justify-center px-5 py-2 rounded-lg shadow-md hover:scale-95 hover:bg-white disabled:bg-opacity-60 disabled:scale-100;
 }
 /* Contact */

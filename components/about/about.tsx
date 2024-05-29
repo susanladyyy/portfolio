@@ -10,6 +10,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 import styles from '@/components/styles/Styles.module.css'
 import { about } from '@/lib/data'
 import { useActiveMenuContext } from '@/context/active-menu'
+import Footer from '../footer/footer'
 
 export default function About() {
     const { setActiveMenu, setLastClick } = useActiveMenuContext()
@@ -57,6 +58,7 @@ export default function About() {
                         Download CV <HiDownload />
                     </a>
                 </div>
+                <Footer />
             </div>
         </div>
     )

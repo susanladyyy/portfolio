@@ -18,10 +18,10 @@ export default function EmailTemplate({
             New message from your portofolio site
         </Preview>
         <Tailwind>
-            <Body>
+            <Body className='bg-gray-100 text-black'>
                 <Container>
-                    <Section>
-                        <Heading>
+                    <Section className='bg-white border border-black my-10 px-10 py-4 rounded-md'>
+                        <Heading className='leading-tight'>
                             You received the following message from the contact form
                         </Heading>
                         <Text>

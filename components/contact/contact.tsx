@@ -6,6 +6,9 @@ import { FaPaperPlane } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { sendEmail } from '../../actions/send_email'
 import Alert from '@mui/material/Alert'
+import Snackbar from '@mui/material/Snackbar';
+import toast from 'react-hot-toast'
+import SubmitButton from '../submit-button';
 
 export default function Contact() {
     const { ref } = useMenuInView("Contact")
@@ -32,16 +35,30 @@ export default function Contact() {
                         const {data, error}  = await sendEmail(formData)
 
                         if(error) {
-                            <Alert severity='error'>There&apos;s a problem sending the email.</Alert>
+                            // <Snackbar autoHideDuration={4000}>
+                            //     <Alert severity='error'>There&apos;s a problem sending the email.</Alert>
+                            // </Snackbar>
+                            
+                            //alert(error)
+
+                            toast.error(error)
+                            return
                         }
                         else {
-                            <Alert severity="success">Email has been sent!</Alert>
+                            // <Snackbar autoHideDuration={4000}>
+                            //     <Alert severity="success">Email has been sent!</Alert>
+                            // </Snackbar>
+
+                            //alert('Email sent successfully')
+
+                            toast.success('Email sent successfully')
+                            return
                         }
                     }
                 } className={styles.contact_form}>
                     <input type="email" name="email" id="" className={styles.email_input} placeholder='Your email' required maxLength={50}/>
                     <textarea name="message" id="message" className={styles.message_input} rows={10} placeholder='Message...' required maxLength={500}></textarea>
-                    <button type="submit" className={`group ${styles.contact_button}`}>Send <FaPaperPlane className='text-xs group-hover:translate-x-1 group:hover:translate-y-2'/></button>
+                    <SubmitButton />
                 </form>
             </div>
         </motion.div>
