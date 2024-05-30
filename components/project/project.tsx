@@ -25,7 +25,7 @@ export default function ProjectCard({
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.3, 1]) // from start to end, the card is not starting from 0 opacity
 
     return (
-        <motion.div ref={ref} className={`${styles.project_card} group dark:bg-black/[0.5]`}
+        <motion.div ref={ref} className={`${styles.project_card} group dark:bg-black/[0.5] dark:hover:bg-black/[0.7]`}
             style={{
                 scale: scaleProgress,
                 opacity: opacityProgress,

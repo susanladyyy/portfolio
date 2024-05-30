@@ -13,7 +13,7 @@ export default function EducationElement() {
 
     return (
         <div ref={ref}>
-            <VerticalTimeline lineColor='rgba(255,255,255,0.5)'>
+            <VerticalTimeline lineColor={theme === "light" ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.8)'}>
                 {
                     educations.map((edu, index) => (
                         <Fragment key={index}>

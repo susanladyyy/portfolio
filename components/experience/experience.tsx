@@ -12,7 +12,7 @@ export default function ExperienceElement() {
 
     return (
         <div ref={ref}>
-            <VerticalTimeline lineColor='rgba(255,255,255,0.5)'>
+            <VerticalTimeline lineColor={theme === "light" ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.8)'}>
                 {
                     experiences.map((exp, index) => (
                         <Fragment key={index}>

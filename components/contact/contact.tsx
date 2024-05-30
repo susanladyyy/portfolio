@@ -27,7 +27,7 @@ export default function Contact() {
             ref={ref} id="contact" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem] h-[80vh] w-[min(100%, 32rem)]`}>
             <div className={styles.title_container}>
                 <span className={`${styles.title} dark:bg-black/[0.5]`}>Contact</span> 
-                <p className={`${styles.contact_subtitle} dark:text-white`}>You can contact me directly through my email <a className={styles.contact_email} href="mailto:susan.lady@outlook.com">susan.lady@outlook.com</a> or fill in the form below</p>
+                <p className={`${styles.contact_subtitle} dark:text-white`}>You can contact me directly through my email <a className={styles.contact_email} href="mailto:susan.lady@outlook.com">susan.lady@outlook.com</a> or fill in the form below for a project or job discussions</p>
             </div>
             <div className={styles.contact}>
                 <form action={
