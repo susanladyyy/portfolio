@@ -25,19 +25,19 @@ export default function ProjectCard({
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.3, 1]) // from start to end, the card is not starting from 0 opacity
 
     return (
-        <motion.div ref={ref} className={`${styles.project_card} group`}
+        <motion.div ref={ref} className={`${styles.project_card} group dark:bg-black/[0.5]`}
             style={{
                 scale: scaleProgress,
                 opacity: opacityProgress,
             }}
         >
             <div className='w-1/2 group-even:ml-[12rem]'>
-                <p className={styles.project_title}>{title}</p>
-                <p className={styles.project_description}>{brief}</p>
+                <p className={`${styles.project_title} dark:text-white`}>{title}</p>
+                <p className={`${styles.project_description} dark:text-white/[0.8]`}>{brief}</p>
                 <ul className={styles.project_tag_container}>
                     {
                         tags?.map((tag, index) => (
-                            <li className={styles.project_tag} key={index}>{tag}</li>
+                            <li className={`${styles.project_tag} dark:bg-[#433c8f]`} key={index}>{tag}</li>
                         ))
                     }
                 </ul>

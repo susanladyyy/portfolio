@@ -11,7 +11,7 @@ export default function Project() {
     return (
         <div ref={ref} id="projects"  className={`${styles.page_container} scroll-mt-[7rem] min-h-[100vh]`}>
             <div className={styles.title_container}>
-                <span className={styles.title}>Projects</span> 
+                <span className={`${styles.title} dark:bg-black/[0.5]`}>Projects</span> 
             </div>
             <div className='flex flex-wrap'>
                 {

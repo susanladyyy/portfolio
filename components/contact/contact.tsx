@@ -26,8 +26,8 @@ export default function Contact() {
             }}
             ref={ref} id="contact" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem] h-[80vh] w-[min(100%, 32rem)]`}>
             <div className={styles.title_container}>
-                <span className={styles.title}>Contact</span> 
-                <p className={styles.contact_subtitle}>You can contact me directly through my email <a className={styles.contact_email} href="mailto:susan.lady@outlook.com">susan.lady@outlook.com</a> or fill in the form below</p>
+                <span className={`${styles.title} dark:bg-black/[0.5]`}>Contact</span> 
+                <p className={`${styles.contact_subtitle} dark:text-white`}>You can contact me directly through my email <a className={styles.contact_email} href="mailto:susan.lady@outlook.com">susan.lady@outlook.com</a> or fill in the form below</p>
             </div>
             <div className={styles.contact}>
                 <form action={
@@ -56,8 +56,8 @@ export default function Contact() {
                         }
                     }
                 } className={styles.contact_form}>
-                    <input type="email" name="email" id="" className={styles.email_input} placeholder='Your email' required maxLength={50}/>
-                    <textarea name="message" id="message" className={styles.message_input} rows={10} placeholder='Message...' required maxLength={500}></textarea>
+                    <input type="email" name="email" id="" className={`${styles.email_input} dark:bg-black/[0.5] dark:border dark:border-[#433c8f] dark:shadow-white/[0.1]`} placeholder='Your email' required maxLength={50}/>
+                    <textarea name="message" id="message" className={`${styles.message_input} dark:bg-black/[0.5] dark:border dark:border-[#433c8f] dark:shadow-white/[0.1]`} rows={10} placeholder='Message...' required maxLength={500}></textarea>
                     <SubmitButton />
                 </form>
             </div>

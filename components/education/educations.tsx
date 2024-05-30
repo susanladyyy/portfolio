@@ -10,7 +10,7 @@ export default function Education() {
     return (
         <div ref={ref} id="education" className={`${styles.page_container} scroll-mt-[7rem] -mt-4`}>
             <div className={styles.title_container}>
-                <span className={styles.title}>Education</span> 
+                <span className={`${styles.title} dark:bg-black/[0.5]`}>Education</span> 
             </div>
             <div>
                 <EducationElement />

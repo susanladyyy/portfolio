@@ -10,8 +10,8 @@ import Footer from "@/components/footer/footer";
 export default function Home() {
   return (
     <main className={styles.main_container}>
-      <div className={styles.left_container}>
-        <div className={styles.left_container_content}>
+      <div className={`${styles.left_container} dark:bg-black/[0.5] dark:shadow-white/[0.1]`}>
+        <div className={`${styles.left_container_content}`}>
           <About />
         </div>
       </div>

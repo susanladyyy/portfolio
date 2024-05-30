@@ -24,7 +24,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0}}
                             animate={{ opacity: 1, scale: 1}}
                             transition={{ type: 'tween', duration: 0.3}}>
-                            <Image src='/assets/profile.png' alt='image_not_found' width="150" height="150" quality="95" priority={true} className={styles.profile_image}/>
+                            <Image src='/assets/profile.png' alt='image_not_found' width="150" height="150" quality="95" priority={true} className={`${styles.profile_image} dark:border-black/[0.8]`}/>
                         </motion.div>
                     </div>
                 </div>

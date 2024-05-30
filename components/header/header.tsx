@@ -14,13 +14,13 @@ export default function Header() {
     return (
         <header className={styles.header_container}>
             <motion.div
-                className={styles.header_bg}
+                className={`${styles.header_bg} dark:bg-opacity-50 dark:bg-black dark:shadow-white/[0.1]`}
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
             ></motion.div>
 
             <nav className={styles.nav_menu}>
-                <ul className={styles.nav_ul}>
+                <ul className={`${styles.nav_ul} dark:text-white/[0.7]`}>
                 {menus.map((menu) => (
                     <motion.li
                     className={`${styles.nav_item} relative`}
@@ -29,12 +29,12 @@ export default function Header() {
                     animate={{ y: 0, opacity: 1 }}
                     >
                         <Link
-                            className={
+                            className={`${
                                 clsx(styles.nav_link, 
                                 {
-                                    'text-gray-950 font-bold': activeMenu === menu.name,
+                                    'text-gray-950 dark:text-white font-bold': activeMenu === menu.name,
                                 }
-                            )}
+                            )} dark:hover:text-white`}
                             onClick={
                                 () => {
                                     setActiveMenu(menu.name)
@@ -46,7 +46,7 @@ export default function Header() {
 
                             {
                                 menu.name === activeMenu && (
-                                    <motion.span className="border border-white shadow-md rounded-lg absolute inset-0 -z-10" layoutId="activeMenu" 
+                                    <motion.span className="border border-white shadow-md shadow-gray-500/[0.6] rounded-lg absolute inset-0 -z-10 dark:shadow-white/[0.6]" layoutId="activeMenu" 
                                     transition={{
                                         type:"spring",
                                         stiffness: 380,
