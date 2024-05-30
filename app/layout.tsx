@@ -5,6 +5,7 @@ import Header from "@/components/header/header";
 import ActiveMenuContextProvider from "@/context/active-menu";
 import { Toaster } from "react-hot-toast";
 import ThemeSwitch from "@/components/theme/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,14 +25,16 @@ export default function RootLayout({
         <div className="bg-[#a9a9ec] top-[6rem] -z-10  right-[30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] fixed dark:bg-[#433c8f]"></div>
 
         {/* <div className="bg-[#d2e8f0] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div> */}
-        <ActiveMenuContextProvider>
-          <Header />
-          {children}
+        <ThemeContextProvider>
+          <ActiveMenuContextProvider>
+            <Header />
+            {children}
 
-          <Toaster position="bottom-center"/>
-        </ActiveMenuContextProvider>
-
-        <ThemeSwitch />
+            <Toaster position="bottom-center"/>
+            <ThemeSwitch />
+          </ActiveMenuContextProvider>
+        </ThemeContextProvider>
+        
       </body>
     </html>
   );
