@@ -24,9 +24,12 @@ export default function Skills() {
 
     return (
         <div ref={ref} id="skills" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem]`}>
-            <div className={styles.title_container}>
+            <motion.div className={styles.title_container}
+            initial={{ opacity: 0, scale: 0}}
+            animate={{ opacity: 1, scale: 1}}
+            transition={{ type: 'tween', duration: 0.3}}>
                 <span className={`${styles.title} dark:bg-black/[0.5]`}>Skills</span> 
-            </div>
+            </motion.div>
             <div className={styles.skills}>
                 <ul className='flex flex-wrap justify-center gap-3 text-lg text-gray-800 dark:text-white'>
                     {

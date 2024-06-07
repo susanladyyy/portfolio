@@ -5,7 +5,7 @@
 
 /* containers */
 .page_container {
-    @apply relative left-[20rem] mb-[10rem];
+    @apply relative left-[40%] mb-[10rem];
 }
 
 .title {
@@ -77,7 +77,7 @@
     @apply flex items-center justify-center;
 }
 .profile_image {
-    @apply object-cover rounded-full border-[0.35rem] border-white shadow-xl;
+    @apply object-cover rounded-full border-[0.35rem] border-white shadow-xl w-[70%];
 }
 .about_contact {
     @apply flex flex-col items-center justify-center gap-2 mt-[2rem];

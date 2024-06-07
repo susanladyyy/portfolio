@@ -16,17 +16,13 @@ export default function About() {
     const { setActiveMenu, setLastClick } = useActiveMenuContext()
 
     return (
-        <div className={styles.about_main}>
+        <motion.div className={styles.about_main}
+        initial={{ opacity: 0, scale: 0}}
+        animate={{ opacity: 1, scale: 1}}
+        transition={{ type: 'tween', duration: 0.3}}>
             <div className={styles.about_container}>
                 <div className={styles.profile_container}>
-                    <div className="">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0}}
-                            animate={{ opacity: 1, scale: 1}}
-                            transition={{ type: 'tween', duration: 0.3}}>
-                            <Image src='/assets/profile.png' alt='image_not_found' width="150" height="150" quality="95" priority={true} className={`${styles.profile_image} dark:border-black/[0.8]`}/>
-                        </motion.div>
-                    </div>
+                    <Image src='/assets/profile.png' alt='image_not_found' width="150" height="150" quality="95" priority={true} className={`${styles.profile_image} dark:border-black/[0.8]`}/>
                 </div>
 
                 <div className={styles.about_porto}>
@@ -60,6 +56,6 @@ export default function About() {
                 </div>
                 <Footer />
             </div>
-        </div>
+        </motion.div>
     )
 }
