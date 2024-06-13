@@ -56,14 +56,9 @@
     @apply h-3/4 flex items-center justify-center relative;
 }
 .nav_link {
-    @apply flex w-full items-center justify-center py-3 hover:text-black transition 2xl:px-[5rem] xl:px-[5rem] md:px-[3rem] sm:px-[0.5rem];
+    @apply flex w-full items-center justify-center py-3 hover:text-black transition 2xl:px-[5rem] xl:px-[4rem] md:px-[3rem] sm:px-[2rem];
 }
 
-@media (max-width: 600px) {
-    .nav_link {
-        @apply px-3;
-    }
-}
 /* Header */
 
 /* About */
@@ -123,7 +118,7 @@
 }
 
 .project_image {
-    @apply absolute w-[40] -top-1 -right-52 rounded-b-xl transition;
+    @apply absolute w-[30rem] -top-1 -right-52 rounded-b-xl transition;
 }
 /* Projects */
 
@@ -168,3 +163,59 @@
     @apply mt-[1rem] flex items-center gap-2 bg-gray-100/[0.7] border-gray-50 w-[20%] justify-center px-5 py-2 rounded-lg shadow-md hover:scale-95 hover:bg-white disabled:bg-opacity-60 disabled:scale-100;
 }
 /* Contact */
+
+@media (max-width: 600px) {
+    .nav_link {
+        @apply px-3;
+    }
+}
+
+@media (max-width: 850px) {
+    .page_container {
+        @apply left-[15%];
+    }
+
+    .profile_image {
+        @apply w-[80%];
+    }
+
+    .left_container {
+        @apply relative top-0 mb-[10%] w-[100%] left-[0%];
+    }
+
+    .about_container {
+        @apply flex justify-center items-center gap-[5rem];
+    }
+
+    .about_left {
+        @apply w-[40%]
+    }
+
+    .about_right {
+        @apply w-[60%]
+    }
+
+    .project_card {
+        @apply max-w-[20rem];
+    }
+
+    .timeline_width {
+        @apply w-[80%];
+    }
+
+    .skills {
+        @apply w-[35rem];
+    }
+
+    .project_card {
+        @apply w-[100%] max-w-[50rem];
+    }
+
+    .nav_item {
+        @apply text-[10px];
+    }
+
+    .nav_link {
+        @apply px-[2rem];
+    }
+}

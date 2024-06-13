@@ -9,7 +9,7 @@ export default function Experience() {
     const { ref } = useMenuInView("Experience")
 
     return (
-        <div ref={ref} id="experience" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem]`}>
+        <div ref={ref} id="experience" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem] w-[85%]`}>
             <motion.div className={styles.title_container}
             initial={{ opacity: 0, scale: 0}}
             animate={{ opacity: 1, scale: 1}}

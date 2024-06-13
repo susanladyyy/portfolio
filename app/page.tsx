@@ -9,6 +9,7 @@ import Contact from "@/components/contact/contact";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  
   return (
     <main className={styles.main_container}>
       <motion.div className={`${styles.left_container} dark:bg-black/[0.5] dark:shadow-white/[0.1]`}

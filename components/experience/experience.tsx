@@ -11,7 +11,7 @@ export default function ExperienceElement() {
     const { theme } = useTheme()
 
     return (
-        <div ref={ref}>
+        <div ref={ref} className={styles.timeline_width}>
             <VerticalTimeline lineColor={theme === "light" ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.8)'}>
                 {
                     experiences.map((exp, index) => (
