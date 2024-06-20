@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <header className={styles.header_container}>
             <motion.div
-                className={`${styles.header_bg} dark:bg-opacity-50 dark:bg-black dark:shadow-white/[0.1]`}
+                className={`${styles.header_bg} dark:bg-opacity-100 dark:bg-black dark:shadow-white/[0.1]`}
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
             ></motion.div>

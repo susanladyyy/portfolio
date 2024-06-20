@@ -9,7 +9,7 @@ export default function Education() {
     const { ref } = useMenuInView("Education")
 
     return (
-        <div className="flex items-center justify-center">
+        <div className={styles.container}>
             <div ref={ref} id="education" className={`${styles.page_container} scroll-mt-[7rem] -mt-4 w-[85%]`}>
                 <motion.div className={styles.title_container}
                 initial={{ opacity: 0, scale: 0}}

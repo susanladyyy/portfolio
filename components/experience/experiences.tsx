@@ -9,7 +9,7 @@ export default function Experience() {
     const { ref } = useMenuInView("Experience")
 
     return (
-        <div className="flex items-center justify-center">
+        <div className={styles.container}>
             <div ref={ref} id="experience" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem] w-[85%]`}>
                 <motion.div className={styles.title_container}
                 initial={{ opacity: 0, scale: 0}}

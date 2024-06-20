@@ -10,7 +10,7 @@ export default function Project() {
     const { ref } = useMenuInView("Projects")
 
     return (
-        <div className="flex items-center justify-center">
+        <div className={styles.container}>
             <div ref={ref} id="projects"  className={`${styles.page_container} scroll-mt-[7rem] min-h-[100vh]`}>
                 <motion.div className={styles.title_container}
                 initial={{ opacity: 0, scale: 0}}

@@ -14,7 +14,7 @@ export default function Contact() {
     const { ref } = useMenuInView("Contact")
 
     return (
-        <div className="flex items-center justify-center">
+        <div className={styles.container}>
             <motion.div 
                 initial={{
                     opacity: 0,
