@@ -170,6 +170,18 @@
     }
 }
 
+@media (max-width: 450px) {
+    .page_container {
+        @apply w-[80%];
+    }
+}
+
+@media (max-width: 1500px) {
+    .project_card {
+        @apply w-[100%] max-w-[50rem];
+    }
+}
+
 @media (max-width: 850px) {
     .page_container {
         @apply left-[15%];
@@ -193,10 +205,6 @@
 
     .about_right {
         @apply w-[60%]
-    }
-
-    .project_card {
-        @apply max-w-[20rem];
     }
 
     .timeline_width {
