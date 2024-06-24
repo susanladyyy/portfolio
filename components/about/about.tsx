@@ -15,7 +15,7 @@ import { useMenuInView } from '@/lib/hooks'
 
 export default function About() {
     const { setActiveMenu, setLastClick } = useActiveMenuContext()
-    const { ref } = useMenuInView("Education")
+    const { ref } = useMenuInView("About")
 
     return (
         <motion.div ref={ref} id="about" className={`${styles.about_main} scroll-mt-[7rem]`}

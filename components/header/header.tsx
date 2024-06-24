@@ -13,13 +13,15 @@ export default function Header() {
 
     return (
         <header className={styles.header_container}>
-            <motion.div
+            {/* <motion.div
                 className={`${styles.header_bg} dark:bg-opacity-100 dark:bg-black dark:shadow-white/[0.1]`}
+                
+            ></motion.div> */}
+
+            <motion.nav className={`${styles.nav_menu} dark:bg-[#080402]`}
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
-            ></motion.div>
-
-            <nav className={styles.nav_menu}>
+            >
                 <ul className={`${styles.nav_ul} dark:text-white/[0.7]`}>
                 {menus.map((menu) => (
                     <motion.li
@@ -46,7 +48,7 @@ export default function Header() {
 
                             {
                                 menu.name === activeMenu && (
-                                    <motion.span className="border border-white shadow-md shadow-gray-500/[0.6] rounded-lg absolute inset-0 -z-10 dark:shadow-white/[0.6]" layoutId="activeMenu" 
+                                    <motion.span className="border border-[#080402] dark:border-[#fbfcfa] shadow-md shadow-gray-500/[0.6] rounded-lg absolute inset-0 -z-10 dark:shadow-white/[0.6]" layoutId="activeMenu" 
                                     transition={{
                                         type:"spring",
                                         stiffness: 380,
@@ -59,7 +61,7 @@ export default function Header() {
                     </motion.li>
                 ))}
                 </ul>
-            </nav>
+            </motion.nav>
         </header>
     );
 }
