@@ -10,6 +10,10 @@ export const about = "My name is Susan Lady Rumokoy, and I am a freshgraduate ma
 
 export const menus = [
     {
+        id: "#about",
+        name: "About",
+    },
+    {
         id: "#projects",
         name: "Projects",
     },

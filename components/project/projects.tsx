@@ -10,8 +10,8 @@ export default function Project() {
     const { ref } = useMenuInView("Projects")
 
     return (
-        <div className={styles.container}>
-            <div ref={ref} id="projects"  className={`${styles.page_container} scroll-mt-[7rem] min-h-[100vh]`}>
+        <div className={`${styles.container}`}>
+            <div ref={ref} id="projects"  className={`${styles.page_container} scroll-mt-[7rem]`}>
                 <motion.div className={styles.title_container}
                 initial={{ opacity: 0, scale: 0}}
                 animate={{ opacity: 1, scale: 1}}

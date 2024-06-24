@@ -31,7 +31,7 @@ export default function ProjectCard({
                 opacity: opacityProgress,
             }}
         >
-            <div className='w-1/2 group-even:ml-[12rem]'>
+            <div className='w-1/2 group-even:ml-[18rem]'>
                 <p className={`${styles.project_title} dark:text-white`}>{title}</p>
                 <p className={`${styles.project_description} dark:text-white/[0.8]`}>{brief}</p>
                 <ul className={styles.project_tag_container}>

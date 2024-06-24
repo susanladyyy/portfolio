@@ -23,8 +23,8 @@ export default function Skills() {
     const { ref } = useMenuInView("Skills")
 
     return (
-        <div className={styles.s_container}>
-            <div ref={ref} id="skills" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem] w-[60%]`}>
+        <div className={styles.container}>
+            <div ref={ref} id="skills" className={`${styles.page_container} scroll-mt-[7rem] mt-[2rem]`}>
                 <motion.div className={styles.title_container}
                 initial={{ opacity: 0, scale: 0}}
                 animate={{ opacity: 1, scale: 1}}

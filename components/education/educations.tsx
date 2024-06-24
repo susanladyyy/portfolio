@@ -10,7 +10,7 @@ export default function Education() {
 
     return (
         <div className={styles.container}>
-            <div ref={ref} id="education" className={`${styles.page_container} scroll-mt-[7rem] -mt-4 w-[85%]`}>
+            <div ref={ref} id="education" className={`${styles.page_container} scroll-mt-[7rem] w-[100%]`}>
                 <motion.div className={styles.title_container}
                 initial={{ opacity: 0, scale: 0}}
                 animate={{ opacity: 1, scale: 1}}
