@@ -57,8 +57,8 @@ export default function Contact() {
                             }
                         }
                     } className={styles.contact_form}>
-                        <input type="email" name="email" id="" className={`${styles.email_input} dark:bg-black/[0.5] dark:border dark:border-[#433c8f] dark:shadow-white/[0.1]`} placeholder='Your email' required maxLength={50}/>
-                        <textarea name="message" id="message" className={`${styles.message_input} dark:bg-black/[0.5] dark:border dark:border-[#433c8f] dark:shadow-white/[0.1]`} rows={10} placeholder='Message...' required maxLength={500}></textarea>
+                        <input type="email" name="email" id="" className={`${styles.email_input} dark:bg-black/[0.5] dark:border dark:border-[#433c8f] dark:shadow-white/[0.1] dark:focus:bg-[#080402]`} placeholder='Your email' required maxLength={50}/>
+                        <textarea name="message" id="message" className={`${styles.message_input} dark:bg-black/[0.5] dark:border dark:border-[#433c8f] dark:shadow-white/[0.1] dark:focus:bg-[#080402]`} rows={10} placeholder='Message...' required maxLength={500}></textarea>
                         <SubmitButton />
                     </form>
                 </div>

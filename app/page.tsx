@@ -12,24 +12,19 @@ export default function Home() {
   
   return (
     <main className={styles.main_container}>
-      {/* <motion.div className={`${styles.left_container}`}
+      <motion.div className={styles.right_container}
       initial={{ opacity: 0, scale: 0}}
       animate={{ opacity: 1, scale: 1}}
       transition={{ type: 'tween', duration: 0.3}}>
-        <div className={`${styles.left_container_content} dark:bg-black/[0.5] dark:shadow-white/[0.1]`}>
-          
-        </div>
-      </motion.div> */}
-      <div className={styles.right_container}>
         <div className={styles.right_container_content}>
           <About />
           <Project />
-          <Education />
-          <Skills />
           <Experience />
+          <Skills />
+          <Education />
           <Contact />
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 }

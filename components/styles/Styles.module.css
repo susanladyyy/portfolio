@@ -4,8 +4,6 @@
 }
 
 /* containers */
-
-
 .title {
     @apply ml-[0.7rem] font-bold bg-gray-50/[0.3] border border-white p-2 rounded-lg;
 }

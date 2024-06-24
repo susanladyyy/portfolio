@@ -35,6 +35,8 @@ export default function EducationElement() {
                             >
                                 <p>{edu.title}</p>
                                 <p>{edu.school}</p>
+                                <p>Major: {edu.major}</p>
+                                <p>{ edu.gpa ? `GPA: ${edu.gpa}` : ''}</p>
                             </VerticalTimelineElement>
                         </Fragment>
                     ))

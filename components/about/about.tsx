@@ -18,7 +18,7 @@ export default function About() {
     const { ref } = useMenuInView("About")
 
     return (
-        <motion.div ref={ref} id="about" className={`${styles.about_main} scroll-mt-[7rem]`}
+        <motion.div ref={ref} id="about" className={`${styles.about_main} scroll-mt-[7rem] mb-[10%]`}
             initial={{ opacity: 0, scale: 0}}
             animate={{ opacity: 1, scale: 1}}
             transition={{ type: 'tween', duration: 0.3}}>
@@ -55,7 +55,7 @@ export default function About() {
                         }>
                             Contact me <BsArrowRight />
                         </Link>
-                        <a className={`${styles.contact_item} bg-white text-[#020035] hover:scale-95`}>
+                        <a className={`${styles.contact_item} bg-white text-[#020035] hover:scale-95`} href='/Susan Lady Rumokoy - CV.pdf' download={true}>
                             Download CV <HiDownload />
                         </a>
                     </div>

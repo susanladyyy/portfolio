@@ -150,75 +150,81 @@ export const projects = [
     },
 ] as const;
 
-export const skills = ["C", "HTML", "CSS", "JavaScript", "ReactJS", "NextJS", "Python", "PHP", "Java", "Unity", "Electron", "Firebase", "PostgreSQL", "Golang", "Laravel", "Tailwind", "Bootstrap"];
+export const skills = ["C/C++", "HTML", "CSS", "SCSS", "JavaScript", "ReactJS", "NextJS", "Python", "PHP", "Java", "OOP", "Flutter", "Firebase", "PostgreSQL", "Laravel", "Tailwind", "Bootstrap"];
 
 export const experiences = [
     {
-        title: "Application Developer",
-        company: "BINUS University",
-        description: "Internship",
-        date: "Feb 2023 - Feb 2024",
-        icon: React.createElement(CgWebsite),
-    },
-    {
         title: "Operations and System Development Officer",
         company: "BINUS University",
-        description: "Full-time",
+        position: "Full-time",
         date: "Jan 2023 - Present",
+        description: [
+            'Calibrated the laboratory hardware assets (monitors, pcs, mice) daily to make sure all hardware is working properly, leading to a well conducted lecture classes/ laboratory practicum.',
+            'Maintained both frontend and backend of laboratory websites, keeping laboratory transactions and assets borrowings structured and reported.',
+            'Taught university students in the laboratory practicum classes and new part time assistant candidate in the training selection process.',
+            'Corrected university students’ assignments.'
+        ],
         icon: React.createElement(IoIosGitNetwork),
+    },
+    {
+        title: "Application Developer",
+        company: "BINUS University",
+        position: "Internship",
+        date: "Feb 2023 - Feb 2024",
+        description: [
+            "Maintained websites related to the Enrichment Program in Binus University, keeping the data of the students taking the programs updated.",
+            "Developed a face-recognition attendance system and enrichment dashboard, sustaining the workflow of the enrichment program."
+        ],
+        icon: React.createElement(CgWebsite),
     },
     {
         title: "Junior Laboratory Assistant",
         company: "BINUS University",
-        description: "Full-time",
+        position: "Full-time",
         date: "Feb 2022 - Jan 2023",
+        description: [
+            "Worked on a project each month to test the progress as an assistant (includes game, desktop, web, mobile apps, and network architecture).",
+            "Taught university students in the laboratory practicum classes and new part time assistant candidate in the training selection process.",
+            "Corrected university students’ assignments and composed quizzes/ exams for the university students to take.",
+            "Participated in training to be prepared for each semester’s teaching."
+        ],
         icon: React.createElement(FaChalkboardTeacher),
     },
     {
         title: "Part Time Laboratory Assistant",
         company: "BINUS University",
-        description: "Part-time",
+        position: "Part-time",
         date: "Aug 2021 - Feb 2022",
+        description: [
+            "Taught university students in the laboratory practicum classes and new part time assistant candidate in the training selection process.",
+            "Corrected university students’ assignments and composed quizzes/ exams for the university students to take.",
+            "Participated in training to be prepared for each semester’s teaching."
+        ],
         icon: React.createElement(FaChalkboardTeacher),
-    },
-    {
-        title: "Sound and Equipment Activist (SAE)",
-        company: "UKM Bersama Dalam Musik",
-        description: "Internship",
-        date: "Apr 2021 - Oct 2021",
-        icon: React.createElement(IoMdMusicalNotes),
     },
 ];
 
 export const educations = [
     {
-        title: "Primary School",
-        logo: React.createElement(FaGraduationCap),
-        school: "BPK Penabur",
-        year: "2008 - 2011"
-    },
-    {
-        title: "Primary School",
-        logo: React.createElement(FaGraduationCap),
-        school: "Harapan Bunda",
-        year: "2011 - 2014"
-    },
-    {
         title: "Secondary School",
         logo: React.createElement(FaGraduationCap),
-        school: "BINUS School Serpong (Streaming: IT and Sociology)",
-        year: "2014 - 2017"
+        school: "BINUS School Serpong",
+        year: "2014 - 2017",
+        major: "IT and Sociology"
     },
     {
         title: "High School",
         logo: React.createElement(FaGraduationCap),
-        school: "EFATA School (Streaming: Science)",
-        year: "2017 - 2020"
+        school: "EFATA School",
+        year: "2017 - 2020",
+        major: "Science"
     },
     {
         title: "University",
         logo: React.createElement(FaGraduationCap),
         school: "BINUS University (Bachelor of Computer Science)",
-        year: "2020 - 2024"
+        gpa: 3.85,
+        year: "2020 - 2024",
+        major: "Computer Science"
     },
 ];

@@ -7,7 +7,7 @@ export default function SubmitButton() {
     const { pending } = useFormStatus()
 
     return (
-        <button type="submit" className={`group ${styles.contact_button} dark:bg-black/[0.5] dark:shadow-sm dark:shadow-white`} disabled={pending}>
+        <button type="submit" className={`group ${styles.contact_button} dark:bg-black/[0.5] dark:shadow-sm dark:shadow-white dark:hover:bg-black dark:hover:text-white`} disabled={pending}>
             {
                 pending ?
                 <div className='h-5 w-5 animate-spin rounded-full border-b-2 border-black'></div>
