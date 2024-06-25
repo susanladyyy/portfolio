@@ -41,7 +41,7 @@ export default function About() {
                 <div className={styles.about_right}>
                     <div className={styles.about_desc}>
                         {/* <p className='text-2xl'>About Me</p> */}
-                        <p className={styles.paragraph}>
+                        <p className='text-[15px]'>
                             { about }
                         </p>
                     </div>
