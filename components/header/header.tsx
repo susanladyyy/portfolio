@@ -12,27 +12,25 @@ export default function Header() {
     const { activeMenu, setActiveMenu, setLastClick } = useActiveMenuContext()
 
     return (
-        <header className={styles.header_container}>
-            {/* <motion.div
-                className={`${styles.header_bg} dark:bg-opacity-100 dark:bg-black dark:shadow-white/[0.1]`}
-                
-            ></motion.div> */}
-
-            <motion.nav className={`${styles.nav_menu} dark:bg-[#080402]`}
-                initial={{ y: -100, x: "-50%", opacity: 0 }}
-                animate={{ y: 0, x: "-50%", opacity: 1 }}
-            >
-                <ul className={`${styles.nav_ul} dark:text-white/[0.7]`}>
+        <header className="z-[999] relative">
+            <motion.div
+            className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-[#fafbfc] bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[40rem] sm:rounded-full dark:bg-[#080402] dark:border-black/40 dark:bg-opacity-75"
+            initial={{ y: -100, x: "-50%", opacity: 0 }}
+            animate={{ y: 0, x: "-50%", opacity: 1 }}
+            ></motion.div>
+    
+            <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
+            <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
                 {menus.map((menu) => (
                     <motion.li
-                    className={`${styles.nav_item} relative`}
+                    className={`h-3/4 flex items-center justify-center relative`}
                     key={menu.id}
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     >
                         <Link
                             className={`${
-                                clsx(styles.nav_link, 
+                                clsx('flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300', 
                                 {
                                     'text-gray-950 dark:text-white font-bold': activeMenu === menu.name,
                                 }
@@ -60,8 +58,8 @@ export default function Header() {
                         </Link>
                     </motion.li>
                 ))}
-                </ul>
-            </motion.nav>
+            </ul>
+            </nav>
         </header>
     );
 }

@@ -3,6 +3,11 @@
     @apply mb-[1rem];
 }
 
+/* hamburger */
+.hamburger {
+    @apply text-black py-[5%] text-2xl hidden;
+}
+
 /* containers */
 .title {
     @apply ml-[0.7rem] font-bold bg-gray-50/[0.3] border border-white p-2 rounded-lg;
@@ -30,26 +35,6 @@
     display: none;  /* Safari and Chrome */
 }
 /* Main */
-
-/* Header */
-.header_container {
-    @apply fixed z-[999];
-}
-.header_bg {
-    @apply shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]; 
-}
-.nav_menu {
-    @apply flex fixed left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 bg-[#fbfcfa] rounded-xl px-[2rem];
-}
-.nav_ul {
-    @apply flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap;
-}
-.nav_item {
-    @apply h-3/4 flex items-center justify-center relative;
-}
-.nav_link {
-    @apply flex w-full items-center justify-center py-3 hover:text-black transition px-[2rem];
-}
 
 /* Header */
 
@@ -156,88 +141,18 @@
 }
 /* Contact */
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .nav_link {
-        @apply px-3;
+        @apply px-[10px];
     }
+}
 
-    .container {
-        @apply flex items-center justify-center ml-[12%] w-[90%];
-    }
-
-    .s_container {
-        @apply flex items-center justify-center -ml-[2%] w-[80%];
-    }
-
-    .header_container {
-        @apply block; 
-    }
-
-    .header_bg {
-        @apply bg-opacity-100;
-    }
-
+@media (max-width: 650px) {
     .nav_menu {
-        @apply -mt-[10%] flex md:top-[2.7rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0;
+        @apply mt-[5%];
     }
 
-    .left_container {
-        @apply mt-[20%] ml-[20%] w-[100%]; /* Use mt-20 for margin-top */
-    }
-
-    .left_container_content {
-        @apply mt-[10%];
-    }
-}
-
-@media (max-width: 1500px) {
-    .project_card {
-        @apply w-[100%] max-w-[50rem];
-    }
-}
-
-@media (max-width: 850px) {
-    .page_container {
-        @apply left-[15%];
-    }
-
-    .profile_image {
-        @apply w-[80%];
-    }
-
-    .left_container {
-        @apply relative top-0 mb-[10%] w-[100%] left-[0%];
-    }
-
-    .about_container {
-        @apply flex justify-center items-center gap-[5rem];
-    }
-
-    .about_left {
-        @apply w-[40%]
-    }
-
-    .about_right {
-        @apply w-[60%]
-    }
-
-    .timeline_width {
-        @apply w-[80%];
-    }
-
-    .skills {
-        @apply w-[35rem];
-    }
-
-    .project_card {
-        @apply w-[100%] max-w-[50rem];
-    }
-
-    .nav_item {
-        @apply text-[10px];
-    }
-
-    .nav_link {
-        @apply px-[2rem];
+    .about_main {
+        @apply mt-[25%];
     }
 }

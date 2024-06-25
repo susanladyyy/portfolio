@@ -51,9 +51,9 @@ export default function ExperienceElement() {
                                 <div className=""
                                 onMouseEnter={() => setShow(index)}
                                 onMouseLeave={() => setShow(-1)}>
-                                    <p>{exp.title}</p>
-                                    <p>{exp.company}</p>
-                                    <p>{exp.position}</p>
+                                    <div className='text-xl font-bold my-[2%]'>{exp.title}</div>
+                                    <div className='text-md my-[2%]'>{exp.company}</div>
+                                    <div className='text-sm my-[2%]'>{exp.position}</div>
                                     <motion.div className={`mt-[5%]`}
                                     initial="hidden"
                                     animate={show === index ? "visible": "hidden"}

@@ -18,16 +18,16 @@ export const menus = [
         name: "Projects",
     },
     {
-        id: "#education",
-        name: "Education",
+        id: "#experience",
+        name: "Experience",
     },
     {
         id: "#skills",
         name: "Skills",
     },
     {
-        id: "#experience",
-        name: "Experience",
+        id: "#education",
+        name: "Education",
     },
     {
         id: "#contact",

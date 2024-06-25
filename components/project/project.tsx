@@ -25,24 +25,28 @@ export default function ProjectCard({
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.3, 1]) // from start to end, the card is not starting from 0 opacity
 
     return (
-        <motion.div ref={ref} className={`${styles.project_card} group dark:bg-black/[0.5] dark:hover:bg-black/[0.7]`}
+        <motion.div ref={ref} className={`${styles.project_card} group dark:bg-black/[0.5] dark:hover:bg-black/[0.7] cursor-pointer`}
             style={{
                 scale: scaleProgress,
                 opacity: opacityProgress,
             }}
         >
-            <div className='w-1/2 group-even:ml-[18rem]'>
-                <p className={`${styles.project_title} dark:text-white`}>{title}</p>
-                <p className={`${styles.project_description} dark:text-white/[0.8]`}>{brief}</p>
-                <ul className={styles.project_tag_container}>
-                    {
-                        tags?.map((tag, index) => (
-                            <li className={`${styles.project_tag} dark:bg-[#433c8f]`} key={index}>{tag}</li>
-                        ))
-                    }
-                </ul>
+            <div className='flex justify-between items-center'>
+                <div className='w-[70%]'>
+                    <p className={`${styles.project_title} dark:text-white`}>{title}</p>
+                    <p className={`${styles.project_description} dark:text-white/[0.8]`}>{brief}</p>
+                </div>
+                <div className='w-[20%]'>
+                    <p className='font-bold'>Technology:</p>
+                    <ul className={styles.project_tag_container}>
+                        {
+                            tags?.map((tag, index) => (
+                                <li className={`${styles.project_tag} dark:bg-[#433c8f]`} key={index}>{tag}</li>
+                            ))
+                        }
+                    </ul>
+                </div>
             </div>
-            <Image src={image} alt={title} quality={95} className={`${styles.project_image} group-hover:-translate-x-1 group-hover:translate-y-1 group-hover:-rotate-1 group-hover:scale-[1.05] group-even:-right-[initial] group-even:-left-52 group-even:group-hover:translate-x-1 group-even:group-hover:rotate-1 group-even:group-hover:translate-y-1`}/>
         </motion.div>
     )
 }

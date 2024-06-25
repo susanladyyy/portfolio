@@ -33,10 +33,10 @@ export default function EducationElement() {
                                 icon={edu.logo}
                                 iconClassName={`${styles.icon} dark:bg-black/[0.5] dark:text-white`}
                             >
-                                <p>{edu.title}</p>
-                                <p>{edu.school}</p>
-                                <p>Major: {edu.major}</p>
-                                <p>{ edu.gpa ? `GPA: ${edu.gpa}` : ''}</p>
+                                <div className='text-[15px]'>{edu.title}</div>
+                                <div className='text-xl font-bold my-[2%]'>{edu.school}</div>
+                                <div className='text-lg my-[3%]'>{edu.major}</div>
+                                <div><span className={`${edu.gpa ? 'bg-[#433c8f] p-2 rounded-lg' : ''}`}>{ edu.gpa ? `GPA: ${edu.gpa}` : ''}</span></div>
                             </VerticalTimelineElement>
                         </Fragment>
                     ))
