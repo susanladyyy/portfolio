@@ -96,6 +96,9 @@ export default function ProjectCard({
                 <hr className={`mt-[5%] bg-gray-500 h-[2px]`}/>
                 <div className={`mt-[2%] flex gap-2`}>
                     {
+                        image.length === 0 ? 
+                        <p>Project image coming soon.</p>
+                        :
                         image.map((img, idx) => (
                             <Image src={img} alt='image not found' key={idx} width={500} height={500} className='rounded-xl'/>
                         ))

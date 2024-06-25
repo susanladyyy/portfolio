@@ -36,7 +36,7 @@ export default function EducationElement() {
                                 <div className='text-[15px]'>{edu.title}</div>
                                 <div className='text-xl font-bold my-[2%]'>{edu.school}</div>
                                 <div className='text-lg my-[3%]'>{edu.major}</div>
-                                <div><span className={`${edu.gpa ? 'bg-[#433c8f] p-2 rounded-lg' : ''}`}>{ edu.gpa ? `GPA: ${edu.gpa}` : ''}</span></div>
+                                <div><span className={`${edu.gpa ? 'bg-[#fafbfc] dark:bg-[#433c8f] p-2 rounded-lg' : ''}`}>{ edu.gpa ? `GPA: ${edu.gpa}` : ''}</span></div>
                             </VerticalTimelineElement>
                         </Fragment>
                     ))
