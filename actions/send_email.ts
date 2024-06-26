@@ -1,6 +1,6 @@
 "use server";
 import EmailTemplate from "@/email-form/email-template";
-import { getErrorMessage, validateString } from "@/lib/utils";
+import { getErrorMessage, validateString } from "@/lib/email/utils";
 import React from "react";
 import { Resend } from "resend";
 
