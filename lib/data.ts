@@ -10,6 +10,12 @@ import nirbana_3 from '@/public/assets/nirbana/3.jpg'
 import nirbana_4 from '@/public/assets/nirbana/4.jpg'
 import nirbana_5 from '@/public/assets/nirbana/5.jpg'
 
+import icei_1 from '@/public/assets/icei/1.jpg'
+import icei_2 from '@/public/assets/icei/2.jpg'
+import icei_3 from '@/public/assets/icei/3.jpg'
+import icei_4 from '@/public/assets/icei/4.jpg'
+import icei_5 from '@/public/assets/icei/5.jpg'
+
 import React from 'react';
 import { CgWebsite } from 'react-icons/cg';
 import { FaChalkboardTeacher } from 'react-icons/fa';
@@ -77,7 +83,7 @@ export const projects = [
         brief: "Pricing calculator is a web application designed to help universities to calculate and estimate the price for academic subjects/ courses.", 
         description: 'Pricing calculator is a web application designed to help universities to calculate and estimate the price for academic subjects/ courses. This application allows user to calculate the prices step-by-step (as provided in the application), and at the end the user will be given the result of the calculation. If the user is not yet satisfied with the result, the user can set the desired price and let the application re-estimate the price using goal-seek method. This application has beed hosted is developed with laravel and python.', 
         tags: ["Laravel", "Python", "Tailwind", "MySQL", "XAMPP"], 
-        image: []
+        image: [icei_1, icei_2, icei_3, icei_4, icei_5]
     },
     { 
         id: "5", 
