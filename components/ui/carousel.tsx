@@ -64,7 +64,7 @@ const Carousel = React.forwardRef<
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
       },
-      orientation === "horizontal" ? [Autoscroll({delay: 10000})] : plugins
+      [Autoscroll({ playOnInit: false })],
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
@@ -98,6 +98,14 @@ const Carousel = React.forwardRef<
       },
       [scrollPrev, scrollNext]
     )
+
+    React.useEffect(() => {
+      const autoScroll = api?.plugins()?.autoScroll
+      if (!autoScroll) return
+      
+      orientation === "horizontal" ? autoScroll.play() : autoScroll.stop()
+      
+    }, [api, orientation])
 
     React.useEffect(() => {
       if (!api || !setApi) {

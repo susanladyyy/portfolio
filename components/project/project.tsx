@@ -6,6 +6,7 @@ import styles from '../styles/Styles.module.css'
 import Image from 'next/image'
 import { IoMdClose } from "react-icons/io";
 import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
+import Autoscroll from "embla-carousel-auto-scroll"
 
 type ProjectProps = (typeof projects)[number]
 
@@ -80,8 +81,8 @@ export default function ProjectCard({
             }}
         >
             <div className='flex justify-between items-center'>
-                <div className={styles.project_name_detail}>
-                    <div className='w-[75%] mb-[3%]'>
+                <div className={`${styles.project_name_detail}`}>
+                    <div className='w-[80%] mb-[3%]'>
                         <p className={`${styles.project_title} dark:text-white`}>{title}</p>
                         <motion.p className={`${styles.project_description} dark:text-white/[0.8]`}
                         animate={open === true ? "to": "from"}
@@ -124,7 +125,7 @@ export default function ProjectCard({
                 </div>
             </div>
             
-            {showImg !== null && (
+            {orientation !== "vertical" && showImg !== null && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
                     <div className="relative">
                         <button className={`absolute -right-10 text-white ${styles.exit_zoom}`} onClick={handleImageClose}>
@@ -151,7 +152,8 @@ export default function ProjectCard({
                         image.length === 0 ? 
                         <p>Project image coming soon.</p>
                         :
-                        <Carousel orientation={orientation}
+                        <Carousel 
+                            orientation={orientation}
                             opts={{
                                 align: orientation === "horizontal" ? "center" : "start",
                                 loop: orientation === "horizontal" ? true : false,
