@@ -5,6 +5,7 @@ import React, { useRef, useState } from 'react'
 import styles from '../styles/Styles.module.css'
 import Image from 'next/image'
 import { IoIosArrowDown } from "react-icons/io";
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
 
 type ProjectProps = (typeof projects)[number]
 
@@ -99,10 +100,22 @@ export default function ProjectCard({
                         image.length === 0 ? 
                         <p>Project image coming soon.</p>
                         :
-                        image.map((img, idx) => (
-                            <Image src={img} alt='image not found' key={idx} width={500} height={500} className='rounded-xl'/>
-                        ))
+                        <Carousel
+                            opts={{
+                                align: "center",
+                                loop: true,
+                            }}
+                        >
+                            <CarouselContent>
+                                {image.map((img, idx) => (
+                                    <CarouselItem className="basis-1/3" key={idx}>
+                                        <Image src={img} alt='image not found' key={idx} width={500} height={500} className='rounded-xl'/>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                        </Carousel>
                     }
+                    
                 </div>
             </motion.div>
         </motion.div>
