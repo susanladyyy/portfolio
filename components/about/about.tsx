@@ -29,10 +29,10 @@ export default function About() {
                     </div>
 
                     <div className={styles.about_porto}>
-                        <a className={styles.porto_item} target='_blank' href='https://github.com/susanladyyy'>
+                        <a className={styles.porto_item} target='_blank' href='https://www.linkedin.com/in/susan-lady-rumokoy'>
                             <BsLinkedin />
                         </a>
-                        <a className={`${styles.porto_item} text-[1.2rem]`} target='_blank' href='www.linkedin.com/in/susan-lady-rumokoy'>
+                        <a className={`${styles.porto_item} text-[1.2rem]`} target='_blank' href='https://github.com/susanladyyy'>
                             <FaGithubSquare />
                         </a>
                     </div>
