@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import styles from '@/components/styles/Styles.module.css'
 import { FaPaperPlane } from 'react-icons/fa'
