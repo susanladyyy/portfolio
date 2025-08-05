@@ -23,7 +23,7 @@ import { FaGraduationCap } from 'react-icons/fa6';
 import { IoIosGitNetwork, IoMdMusicalNotes } from 'react-icons/io';
 
 // export const about = "My name is Susan Lady Rumokoy, and I am a freshgraduate majoring in Computer Science. Currently I am working full-time as a Laboratory Assistant and Operations and System Development Staff.";
-export const about =  "During my initial semester, I applied for a part-time position as a computer laboratory assistant. Despite initial setbacks, I persevered and secured the position during a subsequent hiring period. Serving as a part-time assistant, I gained invaluable experience and was eventually promoted to a full-time role. In my capacity as a full-time assistant, I have been exposed to a diverse range of coding technologies and have contributed to various projects including game development, desktop applications, web development, mobile applications, and network projects. Concurrently, I continued to instruct and mentor students in various subjects. Presently, I am completing an internship at BINUS University as an application developer. Additionally, I have been entrusted with the responsibility of an Operation and Systems Development Staff, wherein I oversee the management of software and hardware utilized for laboratory practicum classes."
+export const about =  "Highly motivated Software Developer with a Bachelor's degree in Computer Science (GPA 3.85) and current Master's student, specializing in crafting robust and user-centric web applications. My expertise spans both Frontend (NextJS, ReactJS, Tailwind) and Backend (Laravel, Python, Java, PHP) development, evidenced by successful projects such as a Loan Financing Origination system, an interior design platform (Nirbana), and a university course pricing calculator. Currently working in a low-code Pega environment, I am continuously seeking opportunities to apply my full-stack development skills and passion for building innovative web solutions."
 
 export const menus = [
     {
@@ -122,10 +122,23 @@ export const skills = ["C/C++", "HTML", "CSS", "SCSS", "JavaScript", "ReactJS", 
 
 export const experiences = [
     {
+        title: "Associate System Architect",
+        company: "PT Kynerja Abadi Solusindo",
+        position: "Full-time",
+        date: "September 2024 - Present",
+        description: [
+            'Work on client’s project as pega developer. Analyses business processes to create the product requirement document (PRD), design UI (when necessary), develop application using pega, do tests on built applications, construct necessary documents (TSD, Class Structure, etc.)',
+            'Present application development progress to clients on meetings',
+            'Currently my team is working on a client’s project which is a financing origination system using pega platform. Our team constructed the PRD, design the application UI, develop the application, and now we are on system integration testing and user acceptance testing phase (SIT and UAT).',
+
+        ],
+        icon: React.createElement(CgWebsite),
+    },
+    {
         title: "Operations and System Development Officer",
         company: "BINUS University",
         position: "Full-time",
-        date: "Jan 2023 - Present",
+        date: "Jan 2023 - August 2024",
         description: [
             'Calibrated the laboratory hardware assets (monitors, pcs, mice) daily to make sure all hardware is working properly, leading to a well conducted lecture classes/ laboratory practicum.',
             'Maintained both frontend and backend of laboratory websites, keeping laboratory transactions and assets borrowings structured and reported.',
@@ -193,6 +206,14 @@ export const educations = [
         school: "BINUS University (Bachelor of Computer Science)",
         gpa: 3.85,
         year: "2020 - 2024",
+        major: "Computer Science"
+    },
+    {
+        title: "University",
+        logo: React.createElement(FaGraduationCap),
+        school: "BINUS Online (Graduate of Computer Science)",
+        gpa: 3.88,
+        year: "2024 - 2026",
         major: "Computer Science"
     },
 ];

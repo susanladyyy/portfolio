@@ -55,7 +55,7 @@ export default function About() {
                         }>
                             Contact me <BsArrowRight />
                         </Link>
-                        <a className={`${styles.contact_item} bg-white text-[#020035] hover:scale-95`} href='/Susan Lady Rumokoy - CV.pdf' download={true}>
+                        <a className={`${styles.contact_item} bg-white text-[#020035] hover:scale-95`} href='/Susan L R - CV - Updated.pdf' download={true}>
                             Download CV <HiDownload />
                         </a>
                     </div>
